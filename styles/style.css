@@ -1,17 +1,52 @@
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #202020;
-  color: #FFC43D;
+  color: #ffc43d;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.progress-container {
+  height: 0.8rem;
+  width: 32rem;
+  border-radius: 0.4rem;
+  background-color: #000;
+}
+
+.progress-container .progress {
+  height: 100%;
+  width: 0;
+  border-radius: 0.4rem;
+  transition: width 0.4s ease;
+}
+
+.progressA {
+  background-color: #744BB4;
+}
+
+.progressB {
+  background-color: #FFE19C;
+}
+
+.progressC {
+  background-color: #DA3E52;
 }
 
 /*# sourceMappingURL=style.css.map */
