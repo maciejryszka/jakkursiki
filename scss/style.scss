@@ -7,28 +7,32 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  background-color: #202020;
-  color: #d8d8d8;
+  font-size: 10px;
 }
 
 html,
 body {
   height: 100%;
+  background-color: #202020;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: #d8d8d8;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3.2rem;
 }
 
 .course {
+  max-width: 90vw;
+
   &--typeA {
     color: #744bb4;
   }
@@ -48,7 +52,7 @@ h1 {
   }
 
   &__last-edit {
-    font-size: 0.8em;
+    font-size: 1.3rem;
   }
 
   &__progressbar {
@@ -73,19 +77,20 @@ h1 {
   &__progress-container {
     height: 1rem;
     width: 32rem;
+    max-width: 90vw;
     margin-bottom: 30px;
     border-radius: 0.4rem;
     background-color: #000;
   }
 
   &__progress-value {
-    font-size: 1.2em;
+    font-size: 1.9rem;
   }
 
   &__title {
     margin: 0;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.4rem;
     font-weight: bold;
     text-transform: uppercase;
   }
