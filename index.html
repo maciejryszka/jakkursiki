@@ -1,27 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
+    <title>A jak tam kursiki?</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div class="progress-container">
-      <div class="progress progressA"></div>
-    </div>
-    <div class="progress-container">
-      <div class="progress progressB"></div>
-    </div>
-    <div class="progress-container">
-      <div class="progress progressC"></div>
-    </div>
-    <script type="module" src="./scripts/script.js"></script>
-    <script type="module" src="./scripts/progress-bar.js"></script>
+    <h1>A jak tam kursiki?</h1>
+    <section class="course course--typeA">
+      <p class="course__title">Backend</p>
+      <p class="course__description">
+        <span class="course__progress-value"></span>
+        <span class="course__last-edit"></span>
+      </p>
+      <div class="course__progress-container">
+        <div class="course__progressbar course__progressbar--js course__progressbar--typeA"></div>
+      </div>
+    </section>
+    <section class="course course--typeB">
+      <p class="course__title">Frontend</p>
+      <p class="course__description">
+        <span class="course__progress-value"></span>
+        <span class="course__last-edit"></span>
+      </p>
+      <div class="course__progress-container">
+        <div class="course__progressbar course__progressbar--js course__progressbar--typeB"></div>
+      </div>
+    </section>
+    <section class="course course--typeC">
+      <p class="course__title">Kursy wstępne</p>
+      <p class="course__description">
+        <span class="course__progress-value"></span>
+        <span class="course__last-edit"></span>
+      </p>
+      <div class="course__progress-container">
+        <div class="course__progressbar course__progressbar--js course__progressbar--typeC"></div>
+      </div>
+    </section>
+    <script type="module" src="./scripts/update-progress-bars.js"></script>
+    <script type="module" src="./scripts/update-descriptions.js"></script>
   </body>
 </html>
